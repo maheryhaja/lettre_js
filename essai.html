@@ -1,0 +1,25 @@
+<DOCTYPE html>
+<html>
+	<head>
+</head>
+<body>
+<h1>Ceci est juste un petit test du programme</h1>
+	<input type="text" id="val">
+<button id="valider">Transformer</button>
+<input type="text" id="resultat">
+</body>
+	<script src="jquery.js"></script>
+<script src="lettre.js"></script>
+<script>
+$(function(){
+
+$("#valider").on("click",function(){
+
+$("#resultat").val(toLettre($("#val").val()));
+
+});
+
+});
+
+</script>
+</html>
